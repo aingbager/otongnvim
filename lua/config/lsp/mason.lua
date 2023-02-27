@@ -11,6 +11,7 @@ local servers = {
 	"emmet_ls",
 	"intelephense",
 	"marksman",
+	"clangd",
 }
 
 local settings = {
@@ -28,10 +29,10 @@ local settings = {
 
 require("mason").setup(settings)
 -- * buka remark ini jika akan menggunakan list serverrs diatas dan remark config dibawah
--- require("mason-lspconfig").setup({
--- 	ensure_installed = servers,
--- 	automatic_installation = true,
--- })
+require("mason-lspconfig").setup({
+	ensure_installed = servers,
+	automatic_installation = true,
+})
 --
 -- * buka remark ini jika ingin menjalankan dengan cara install dan remark config diatas (pilih satu)
 require("mason-lspconfig").setup()
