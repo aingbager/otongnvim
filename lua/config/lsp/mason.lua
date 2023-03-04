@@ -12,6 +12,7 @@ local servers = {
 	-- "intelephense",
 	-- "marksman",
 	"clangd",
+	"rust_analyzer",
 }
 
 local settings = {
